@@ -23,6 +23,7 @@ def convertImages():
     zipBuffer.seek(0)
     return zipBuffer.getvalue()
 
+st.set_page_config(page_title="Sims 4 Screenshot Converter", page_icon="./static/Freelancer-Freelance Programmer.png")
 st.title("Sims 4 Screenshot Converter")
 st.write("This tool allows you to convert external screenshots and images to be recognised as Sims 4 screenshots. Just upload the images, and download the converted screenshots as a ZIP archive. You can then extract the converted screenshots into your Sims 4 screenshot folder found at")
 st.code(r"C:\Users\{Your Username}\Documents\Electronic Arts\The Sims 4\Screenshots", language=None)
