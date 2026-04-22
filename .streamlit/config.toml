@@ -1,5 +1,15 @@
+[server]
+enableStaticServing = true
+
+[[theme.fontFaces]]
+family="simssans"
+url="app/static/thesimssansbold.otf"
+style="normal"
+weight=400
+
 [theme]
 primaryColor="#00fafc"
 backgroundColor="#b8beeb"
 secondaryBackgroundColor="#6d7abf"
 textColor="#000062"
+font="simssans"
