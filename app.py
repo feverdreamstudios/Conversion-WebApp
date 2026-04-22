@@ -24,9 +24,9 @@ def convertImages():
     return zipBuffer.getvalue()
 
 st.title("Sims 4 Screenshot Converter")
-st.write("This tool allows you to convert external screenshots and images to be recognised Sims 4 screenshots. Just upload the images, and download the converted screenshots as a ZIP archive. You can then extract the converted screenshots into your Sims 4 screenshot folder found at")
+st.write("This tool allows you to convert external screenshots and images to be recognised as Sims 4 screenshots. Just upload the images, and download the converted screenshots as a ZIP archive. You can then extract the converted screenshots into your Sims 4 screenshot folder found at")
 st.code(r"C:\Users\{Your Username}\Documents\Electronic Arts\The Sims 4\Screenshots", language=None)
 col1, col2, col3 = st.columns(3,vertical_alignment="center")
-uploadedFiles = col1.file_uploader(label="screenshots",accept_multiple_files=True,label_visibility="hidden")
+uploadedFiles = col1.file_uploader(label="Upload your screenshots",accept_multiple_files=True,label_visibility="visible")
 col2.image("https://freepngimg.com/thumb/direction/21560-6-green-arrow-image.png")
 col3.download_button(label="Download converted images", data=convertImages(), file_name="ConvertedScreenshots.zip", disabled=not uploadedFiles)
